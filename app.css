@@ -1,0 +1,719 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+background: #eae9e5!important;
+width: 100%;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+p{
+    margin-bottom: 0px!important;
+}
+
+header{
+   width: 100%;
+   height: auto;
+   background: black;
+   /* padding-bottom: 30px */ 
+}
+
+
+.fullScreen{
+    width: 100%;
+    height: 10px;
+   margin-bottom: 4px;
+    background: rgb(183, 206, 7);
+}
+
+#section_header{
+    border-bottom: 1px solid rgb(109, 109, 109);
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#section_header h1{
+    color : rgb(109, 109, 109);
+    font-size: 11px;
+    line-height: 20px;
+}
+
+
+#header_reseaux_sociaux a{
+    text-decoration: none;
+    border-left: 1px solid grey;
+    font-size: 15px;
+    padding: 8px;
+    color: grey
+}
+
+#header_reseaux_sociaux a:hover{
+    color: white;
+}
+
+
+header .logo{
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+header .logo .carre_logo{
+    display: flex;
+    justify-content: center;
+}
+
+
+header .logo .carre_item{
+    margin: 2px;
+}
+
+header .carre_logo .one{
+    border: 1px solid orange;
+    width: 10px;
+    height: 10px;
+    background: orange;
+}
+
+header .carre_logo .two{
+    width: 10px;
+    height: 10px;
+    background: palevioletred;
+}
+
+header .carre_logo .three{
+    width: 10px;
+    height: 10px;
+    background: #7ba400;
+}
+
+
+nav{
+     margin-top: 50px; 
+    width: 100%;
+    height: 56px;
+    background: rgb(183, 206, 7);
+    
+}
+
+
+
+nav a{
+    text-decoration: none!important;
+    color: black
+}
+
+
+
+nav ul {
+      list-style: none;
+      padding-left: 0;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 0!important;
+      z-index: 2;
+  }
+
+ nav ul li{
+     display: block;
+      padding: 1rem;
+      border-right: 1px solid grey; 
+  }
+
+
+
+nav ul li:nth-child(5n){
+  border-right: none!important;
+}
+
+
+nav ul li ul {
+    background: rgba(238, 255, 107, 0.856);
+    visibility: hidden;
+  opacity: 0;
+  min-width: 5rem;
+    position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+    left: 0;
+  display: none;
+}
+nav ul li:hover > ul,
+nav ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+  background: rgba(238, 255, 107, 0.856);
+ 
+}
+
+
+#menu_niv_un{
+    border-bottom: 1px solid #a2c632;
+}
+
+
+.header_img img{
+    width: 100%;
+    height: 290px;
+    z-index: -1;
+}
+
+
+                 /*  ///////////////////////////////////////////// */
+
+.article_body_left{
+    border: 1px solid transparent;
+    border-bottom: 5px solid grey;
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+    background: white;
+    width: 50%;
+    height: auto
+}
+
+
+.article_body_left aside h4 a{
+    text-decoration: none;
+    color: black!important
+}
+
+.article_body_left aside h4{
+    text-align: justify;
+    margin: 30px 0 20px 20px; 
+}
+
+
+.left_link{
+text-decoration: none!important;
+ color: black;
+ text-align: justify;
+ font-weight: bold;
+ margin-left: 40px;
+}
+
+.left_link:hover{
+   color:rgb(123, 164, 0);
+}
+
+
+
+.article_body_left aside ul{
+    margin: 10px 0 0 0;
+}
+
+.article_body_left aside ul li{
+    width: 50%;
+    margin: 0 auto;
+    text-align: justify;
+    list-style: square;
+    color: grey;
+}
+
+.article_body_left aside ul li a{
+    text-decoration: none;
+    color: grey;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+
+hr{
+    margin: 0 auto;
+   width: 250px;
+}
+
+.choix_profil{
+    width: 50%;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+
+.choix_profil a{
+    text-decoration: none!important;
+    color: white!important;
+}
+
+.choix_produits{
+    width: 100%;
+    height: 70px;
+    padding-left: 10px; 
+    padding-top: 10px;
+    background: black;
+    border-left: 10px solid #ff9e02;
+}
+
+.choix_produits span{
+    font-weight: bold
+}
+
+.choix_profil_content{
+    background: url("https://www.vulgaris-medical.com/sites/default/files/styles/big-lightbox/public/field/image/actualites/2015/01/12/14-excellentes-raisons-de-boire-du-the-vert.jpg?itok=nx5mJ2be");
+   background-size: cover;
+   background-repeat: no-repeat;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.choix_profil_item{
+    background: black;
+    opacity: 0.7;
+    padding: 5px;
+    width: 100px;
+    height: 51;
+    font-size: 14px;
+
+}
+
+.choix_pro:hover{
+    background: rgba(188, 213, 0, 0.8);
+    transition: 1s ease;
+    opacity: 1;
+}
+
+.choix_par:hover{
+    background: rgba(236, 142, 0, 0.8);
+    transition: 1s ease;
+    opacity: 1;
+}
+
+
+
+.actualites{
+    border-bottom: 5px solid grey;
+    width: 50%;
+    padding-bottom: 20px;
+    height: auto;
+    background: white
+}
+
+.actualites a{
+    text-decoration: none!important;
+}
+
+.actu_last_link
+{
+    text-decoration: none;
+    color: grey;
+    font-size: 14px;
+    margin-left: 40px;
+}
+
+.actu_last_link:hover{
+    color:rgb(123, 164, 0)!important;
+    transition: 1s ease;
+}
+
+.my_title{
+    font-weight: 700;
+    margin-left: 10px;
+    padding-top: 30px !important;
+}
+
+.content_actu{
+    display: flex;
+}
+
+.actu_item{
+  padding: 10px
+}
+
+.actu_item_un{
+    margin-left: 10px;
+}
+
+.actu_item_deux{
+    margin-bottom: 20px!important
+}
+
+.actu_item_deux p a{
+    color: #7ba400;
+    font-weight: 700;
+}
+
+.actu_resume{
+    font-size: 15px;
+    width: 100%;
+}
+
+
+
+
+
+
+main{
+width: 100%;
+height: auto;
+display: flex!important;
+}
+
+
+#section_body_left{
+    width: 50%;
+}
+
+#section_body_right{
+ /*    border: 1px solid black; */
+    width: 50%;
+    height: 200px;
+    margin-left: -185px;
+}
+
+
+
+
+#section_body_right .carre_logo{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 3px;
+}
+
+
+#section_body_right .carre_item{
+    margin: 3px;
+}
+
+#section_body_right .carre_logo .one{
+    border: 1px solid orange;
+    width: 10px;
+    height: 10px;
+    background: orange;
+}
+
+#section_body_right .carre_logo .two{
+    width: 10px;
+    height: 10px;
+    background: palevioletred;
+}
+
+#section_body_right .carre_logo .three{
+    width: 10px;
+    height: 10px;
+    background: #7ba400;
+}
+
+
+.article_body_right{
+    width: 100%;
+    height: auto;
+}
+
+
+
+.details_content{
+background: white;
+width: 138%;
+padding: 25px;
+font-size: 15px;
+}
+
+
+.details_content img{
+    float: right;
+}
+
+
+.nos_produits{
+display: flex;
+width: 138%;
+background: white;
+padding: 20px;
+border-bottom: 1px solid #7ba400;
+}
+
+
+.nos_produits h3 a{
+    text-decoration: none;
+     color:#7ba400;
+     font-size: 18px;
+}
+
+.nos_produits p{
+    font-size: 13px;
+}
+
+
+.nos_produits .btn{
+    height: auto;
+width: auto;
+font-size: 10px;
+text-transform: uppercase;
+font-weight: normal;
+border-radius: 0;
+border: 1px solid #7ba400;
+padding: 4px 8px;
+margin-top: 15px;
+}
+
+
+.nos_produits .btn:hover{
+    background: #7ba400;
+}
+
+
+
+
+
+
+
+/****************************/
+/******  PIED DE PAGE  ******/
+/****************************/
+
+#zone-footer {
+	background: #cdc8c2;
+	position: relative;
+	z-index: 2;
+	margin-top: 70px;
+	border-bottom: 8px solid #b7ce07;
+	    overflow: hidden;
+}
+
+
+	#footer {
+		padding: 45px 0 30px 0;
+		position: relative;
+	}
+
+		#footer::before {
+			content: '';
+			position: absolute;
+			left: -120px;
+			top: 0;
+			width: 1300px;
+			height: 19px;
+			background: url('https://www.baronnys.fr/default/CMS/css/common/../../images/baronnys/ombre_footer.png') no-repeat center bottom;
+		}
+
+				#menu-footer li {
+			list-style-type: none;
+		}
+
+		#menu-footer ul,
+		#menu-footer {
+			padding: 0;
+		}
+			
+			#menu-footer .menus {
+				display: inline-block;
+				width: 700px;
+				vertical-align: top;
+			}
+
+			#menu-footer .menus:first-child + .menus {
+				width: 202px;
+				margin: 0 33px;
+			}
+
+			#menu-footer .menus:first-child + .menus + .menus {
+				width: 252px;
+			}
+
+				.menus > p {
+					color: #000;
+					font-size: 14px;
+					border-bottom: 1px solid #a7a6a4;
+					padding: 0 0 0 15px;
+					position: relative;
+					font-weight: 700;
+					margin-bottom: 10px;
+					text-transform: uppercase;
+				}
+
+				.menus > p::before {
+					content: "";
+					position: absolute;
+					left: 0;
+					top: 0;
+					width: 9px;
+					height: 11px;
+					background: #ed8e00;
+				}
+
+				#menu-footer .menus:first-child + .menus > p::before {
+					background: #dfa0bb;
+				}
+
+				#menu-footer .menus:first-child + .menus + .menus > p::before {
+					background: #acc205;
+				}
+
+				#menu-footer .menus:first-child ul > li {
+					display: inline-block;
+					vertical-align: top;
+					width: 215px;
+				}
+
+				#menu-footer .menus:first-child ul > li:first-child,
+				#menu-footer .menus:first-child ul > li:first-child + li {
+					margin-right: 15px;
+				}
+
+				#menu-footer .menus:first-child > ul {
+					padding-left: 5px;
+				} 
+
+				#menu-footer .menus:first-child .menu1footer a {
+					color: #635b57;
+					text-decoration: none;
+					font-size: 13px;
+					position: relative;
+					padding-left: 8px;
+					font-weight: 300;
+					line-height: 25px;
+				}
+
+				#menu-footer .menus:first-child .menu1footer a:hover {
+					color: #ed8e00;
+				}
+
+				#menu-footer .menus:first-child .menu1footer a::before {
+					content: '';
+					position: absolute;
+					left: 0;
+					top: 8px;
+					width: 0;
+					height: 0;
+					border-style: solid;
+					border-width: 2.5px 0 2.5px 3px;
+					border-color: transparent transparent transparent #312c29;
+				}
+
+				#menu-footer .menus:first-child + .menus ul li,
+				#menu-footer .menus:first-child + .menus + .menus ul li {
+					color: #635b57;
+					font-size: 13px;
+					line-height: 18px;
+				}
+
+				#menu-footer .menus:first-child + .menus ul li:first-child,
+				#menu-footer .menus:first-child + .menus + .menus ul li:first-child {
+/*					font-weight: 700;
+*/				}
+
+				#menu-footer form,
+				#menu-footer fieldset {
+					border: none;
+				}
+
+				#menu-footer fieldset {
+					padding: 0 0 0 2px;
+				}
+
+				#menu-footer label {
+					display: none;
+				}
+
+				#menu-footer input {
+					width: 80%;
+					display: block;
+					height: 30px;
+					border: none;
+					padding: 5px 10px;
+					font-size: 13px;
+				}
+
+				#menu-footer input[type='text'],
+				#menu-footer input[type='password'] {
+					margin-bottom: 5px;
+				}
+
+				#menu-footer input[type='submit'] {
+					cursor: pointer;
+					background: #b7ce07;
+					color: #fff;
+
+					-webkit-transition: all .4s ease-in-out;
+					   -moz-transition: all .4s ease-in-out;
+					    -ms-transition: all .4s ease-in-out;
+					     -o-transition: all .4s ease-in-out;
+					        transition: all .4s ease-in-out;
+				}
+
+				#extranet-forgotten-password-link {
+					text-decoration: none;
+					margin-top: 10px;			
+					font-size: 12px;
+				}
+
+					#extranet-forgotten-password-link a,
+					#extranet-connected-txt,
+					#extranet-logout {
+						color: #635b57;
+					}
+
+				#menu-footer input[type='submit']:hover {
+					background: #fff;
+					color: #b7ce07;
+				}
+
+		#zone-sub-footer {
+			background: #070707;
+			padding: 22px 0;
+			height: 76px;
+			text-align: center;
+		}
+
+		#footer-copyright,
+		#footer-copyright a {
+			font-size: 11px;
+			font-weight: normal;
+			color: #6d6d6d;
+			text-align: center;
+		}
+		#footer-copyright {
+		}
+			#footer-copyright a {
+				text-decoration: none;
+			}
+				#footer-copyright a:hover {
+					color: #acc205;
+				}
+
+			#footer-copyright img {
+				margin-bottom: 0px;
+			}
+
+			#footer-copyright a:first-child img {
+				margin-bottom: -3px;
+			}
+
+		#lastupdate {
+			display: block;
+			color: #b7ce07;
+			font-size: 11px;
+			font-weight: normal;
+			line-height: 14px;
+			text-align: center;
+		}
+
+		#footer-copyright,
+		#footer-copyright a {
+			font-size: 11px;
+			font-weight: normal;
+			color: #6d6d6d;
+		}
+		#footer-copyright {
+		}
+			#footer-copyright a {
+				text-decoration: none;
+			}
+				#footer-copyright a:hover {
+					color: #b7ce07;
+				}
+
+			#footer-copyright img {
+				margin-bottom: 0px;
+			}
+
+			#footer-copyright a:first-child img {
+				margin-bottom: -2px;
+			}
